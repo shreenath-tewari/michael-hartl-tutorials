@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield :title %> | Sample App</title>
+    <title><%= full_title(yield :title) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,18 @@
   </head>
 
   <body>
+
+  <header class="navbar navbar-fixed navbar-inverse">
+    <div class="container">
+      <nav>
+        <ul class="navbar navbar-nav navbar-right">
+          <li><%= link_to "Home", static_pages_home_path %></li>
+          <li><%= link_to "Help", static_pages_help_path %></li>
+          <li><%= link_to "About", static_pages_about_path %></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
      <%= yield %>
   </body>
 </html>
