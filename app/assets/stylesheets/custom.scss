@@ -15,11 +15,12 @@ textarea {
 
 .center {
   text-align: center;
+
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
 
 /* h1, h2, h3, h4 {
   line-height: 1px;
@@ -42,15 +43,35 @@ textarea {
 .footer {
   color: #7f8c8d;
   margin-top: 20px;
+
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
 
-.footer ul {
-  float: right;
-  list-style: none;
+@mixin box_sizing {
+  box-sizing: border-box;
 }
 
-.footer ul li {
+.debug_dump {
+  clear: both;
   float: left;
-  margin-left: 15px;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
 
+.gravatar-name {
+
+  margin: 10px;
+
+  h1 {
+    text-align: center;
+    padding: 5px;
+  }
+}
