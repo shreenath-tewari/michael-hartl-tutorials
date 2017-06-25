@@ -9,5 +9,11 @@
     <data-source name="Rails sample: test" uuid="b8f92112-6b89-4ff5-8a74-65a89e0252cf">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
+    <data-source name="development.sqlite3" uuid="e51f522d-f4a3-49a6-9ffa-4f77851e0a35">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <auth-required>false</auth-required>
+      <first-sync>true</first-sync>
+    </data-source>
   </component>
 </project>
