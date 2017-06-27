@@ -1,6 +1,6 @@
 <% provide(:title, "Sign Up") %>
 
-<h1>Sign Up</h1>
+<h1 class="center">Sign Up</h1>
 
 <div class="row">
 
@@ -8,17 +8,19 @@
 
     <%= form_for(@user) do |f| %>
 
-      <%= f.label :name %><br>
-      <%= f.text_field :name %><br>
+      <%= render 'shared/signup_errors'  %>
 
-      <%= f.label :email %><br>
-      <%= f.email_field :email %><br>
+      <%= f.label :name %>
+      <%= f.text_field :name, class: "form-control" %>
 
-      <%= f.label :password %><br>
-      <%= f.password_field :password %><br>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control" %>
 
-      <%= f.label :password_confirmation, "Confirmation" %><br>
-      <%= f.password_field :password_confirmation %><br>
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %><br>
 
       <%= f.submit "Create Account", class: "btn btn-primary" %>
 
