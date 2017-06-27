@@ -1,5 +1,7 @@
 <% provide(:title, "Login") %>
 
+<h1 class="center">Login</h1>
+
 <div class="row">
 
   <div class="col-md-6 col-md-offset-3">
@@ -10,11 +12,13 @@
       <%= f.email_field :email, class: "form-control" %>
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: "form-control" %>
+      <%= f.password_field :password, class: "form-control" %><br>
 
       <%= f.submit "Login", class: "btn btn-primary" %>
 
     <% end %>
+
+    <br><p>New User? <%= link_to "Sign Up Now", signup_path %></p>
 
   </div>
 
