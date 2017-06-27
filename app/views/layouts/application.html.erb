@@ -12,6 +12,11 @@
 
   <%= render 'layouts/header' %>
 
+  <% if (yield :title) != "Home"  %>
+  <h1 class="center"><%= yield :title %></h1>
+  <br>
+  <% end %>
+
   <% flash.each do |key, message| %>
     <div class="alert alert-<%= key %>"><%= message %></div>
   <% end %>
