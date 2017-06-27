@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Gem for controller testing
+gem 'rails-controller-testing'
+
 # Gem for Bootstrap
 gem 'bootstrap-sass'
 
